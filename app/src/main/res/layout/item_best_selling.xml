@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/input_design"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_picture_best_selling"
+            android:layout_width="144dp"
+            android:layout_height="100dp"
+            android:background="@drawable/addcart"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            tools:src="@drawable/kurkmantolumadonna" />
+
+        <TextView
+            android:id="@+id/tv_name_best_selling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/purple_700"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:text="Kürk Mantolu Madonna" />
+
+        <TextView
+            android:id="@+id/tv_description_best_selling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:textColor="@color/secondary_text"
+            tools:text="Sabahattin Ali"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_price_best_selling"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="35 TL" />
+
+        <ImageView
+            android:id="@+id/btn_bestselling_add_cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/add_cart_button"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_add_shopping_cart_24" />
+    </LinearLayout>
+
+</LinearLayout>

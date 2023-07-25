@@ -1,0 +1,15 @@
+package com.example.bookbox.ui.activity
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.example.bookbox.R
+
+class OneActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_one)
+
+        //actionbar
+        supportActionBar?.hide()
+    }
+}

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    android:background="@drawable/blur_img"
+    tools:context=".ui.activity.BuyActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carddd" />
+
+            <TextView
+                android:layout_width="206dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Kartın Üzerindeki Ad Soyad:"
+                android:textColor="@color/primary_text"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="57dp" />
+
+            <EditText
+                android:id="@+id/kart_ad_soyad"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/addcart"
+                android:ems="8"
+                android:inputType="text"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.164"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.122"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="206dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Kart Numarası:"
+                android:textColor="@color/primary_text"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="133dp" />
+
+            <EditText
+                android:id="@+id/kart_numarasi"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:hint=" ****  ****  ****  ****"
+                android:background="@drawable/addcart"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.164"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.232"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+            <LinearLayout
+                android:layout_width="326dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:text="Skt:"
+                        android:textColor="@color/primary_text"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="56dp"
+                        tools:layout_editor_absoluteY="214dp" />
+
+                    <EditText
+                        android:id="@+id/ayyil"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/addcart"
+                        android:ems="10"
+                        android:hint="  ay/yıl"
+                        android:inputType="text"
+                        android:maxLength="5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.038"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.348"
+                        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:text="CVV:"
+                        android:textColor="@color/primary_text"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="251dp"
+                        tools:layout_editor_absoluteY="214dp" />
+
+                    <EditText
+                        android:id="@+id/cvv"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:background="@drawable/addcart"
+                        android:hint=" ***"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.958"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.348"
+                        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <CheckBox
+                    android:id="@+id/checkboxone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkbox" />
+
+                <CheckBox
+                    android:id="@+id/checkboxtwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkbox2" />
+                <Button
+                    android:id="@+id/btncheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/checkout"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/input_design"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Ödemeyi Tamamla"
+                android:textAllCaps="false"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

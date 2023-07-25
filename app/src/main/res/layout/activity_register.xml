@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login"
+    tools:context=".ui.activity.RegisterActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/bb" />
+
+    <LinearLayout
+        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:orientation="horizontal"
+        android:background="@drawable/input_design">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:startIconDrawable="@drawable/ic_person2"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_design"
+            android:textColorHint="@color/secondary_text">
+
+            <EditText
+                android:background="@drawable/input_design"
+                android:id="@+id/kayitKullaniciAdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="kullanıcı adı"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/_230sdp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal"
+        android:background="@drawable/input_design"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_round_email"
+            android:textColorHint="@color/secondary_text"
+            tools:ignore="MissingClass">
+
+            <EditText
+                android:id="@+id/kayitEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="e-mail"
+                android:background="@drawable/input_design"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/_230sdp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/input_design"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/ic_round_lock_24"
+            android:textColorHint="@color/secondary_text">
+
+            <EditText
+                android:id="@+id/kayitSifre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="şifre"
+                android:maxLines="1"
+                android:background="@drawable/input_design"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnKaydet"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_design"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Kayıt Ol"
+        android:textAllCaps="false"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Üye misin?"
+            android:textColor="#C30B0A0A"
+            android:layout_marginTop="7dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/btnGiriseDon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:gravity="left"
+            android:text="GİRİŞ YAP"
+            android:layout_marginTop="7dp"
+            android:clickable="true"
+            android:textColor="#FFFE3600"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:focusable="true"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+</LinearLayout>

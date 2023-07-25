@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur_img"
+    tools:context=".ui.account.CouponActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:drawablePadding="@dimen/_14sdp"
+        android:textColor="@color/primary_text"
+        android:gravity="center"
+        android:text="Kuponlarım"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:drawablePadding="@dimen/_14sdp"
+            android:text="İlk Siparişine Özel %50 indirim!"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_14ssp"
+            app:drawableStartCompat="@drawable/ic_promo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_14sdp"
+            android:text="Kupon Kodu: A4516DGF754"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11ssp"
+            app:drawableStartCompat="@drawable/ic_arrow_right" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:drawablePadding="@dimen/_14sdp"
+            android:text="İlk Kiralamana Özel %30 indirim!"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_14ssp"
+            app:drawableStartCompat="@drawable/ic_promo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_14sdp"
+            android:text="Kupon Kodu: B43ER576KL5"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11ssp"
+            app:drawableStartCompat="@drawable/ic_arrow_right" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@color/gray" />
+
+    </LinearLayout>
+
+</LinearLayout>

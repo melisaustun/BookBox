@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">bookbox</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="cart">Cart</string>
+    <string name="favorite">Favorite</string>
+    <string name="account">Account</string>
+
+    <string name="about">
+        BookBox ile kitabı ister satın alabilir istersen kiralayabilirsin. Kiralamada iade konusunda problem olmaması adına kiralaman satın alma bedeli üzerinden gerçekleştirilecek.
+        Kiralamadan kalan ücretin kitabı kargoya verdiğinde ve kitap bize ulaştığında kartına yatırılacak. Kitabı iade edene kadar satın almış sayılacaksın.
+        Artık kitapları okuyup bir kenara kaldırmak yerine, bir kitabı satın alma fiyatına birden fazla kitap kiralayıp okuyabilirsin!</string>
+
+    <string name="checkbox">Ön Bilgilendirme Koşullarını ve Mesafeli Satış Sözleşmesini okudum onaylıyorum.</string>
+    <string name="checkbox2">Açık Rıza ve SMS İle Ticari Elektronik ileti iznini kabul ediyorum.</string>
+    <string name="title_onboarding_1">İster Satın Al !</string>
+    <string name="description_onboarding_1">Bookbox ile dilediğin kitabın özetine ulaşıp satın alabilirsin.</string>
+
+    <string name="title_onboarding_2">İster Kirala !</string>
+    <string name="description_onboarding_2">Veya daha uygun bir fiyata kitabı kiralayabilirsin.</string>
+
+    <string name="title_onboarding_3">Dilediğince Oku </string>
+    <string name="description_onboarding_3">Kitabını satın alma fiyatına kirala, kitabı iade ettikten sonra kiralama bedelinden kalan ücreti iade edelim. İşte bu kadar kolay!</string>
+
+    <string name="start_text_advice">Hadi Başlayalım !</string>
+
+    <string name="start">start</string>
+    <string name="skip">Skip</string>
+    <string name="finish">finish</string>
+    <string name="next">next</string>
+    <string name="back">back</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="warning">Kiralama ücreti tutarı, kiralama gün sayısına göre değişiklik göstermektedir.</string>
+    <string name="all_fields_are_mandatory">All fields are mandatory!</string>
+    <string name="currently_rented_cars_info">Currently Rented Cars Info</string>
+    <string name="previous_drivers_history">Previous Drivers History</string>
+    <string name="register_driver_info">Register Driver Info</string>
+
+    <string name="register">Register</string>
+    <string name="label_driver">You can make call to the driver and see his location by the following buttons</string>
+    <string name="rental_name_is">Driver name is: %1$s </string>
+    <string name="all_previous_drivers_records">All previous drivers Records:</string>
+
+    <string name="no_text_found">Herhangi bir metin bulunamadı…</string>
+    <string name="error_default_msg">Bir şeyler yanlış gitti!</string>
+    <string name="camera_error_default_msg">Kameradan görüntü alınamadı</string>
+    <string name="permission_denied_msg">Kamera erişimine izin vermediniz.</string>
+    <string name="clipboard_text">Panoya kopyalandı</string>
+    <string name="torch_not_available_msg">Hata , flaş kullanılamıyor</string>
+    <string name="share_text_title">Şununla paylaş:</string>
+    <string name="text_in_image">Metin</string>
+    <string name="copy_to_clipboard">Panoya Kopyala</string>
+    <string name="close_dialog">Kapat</string>
+    <string name="torch_button">Flaş Düğmesi</string>
+    <string name="share_text">Metni Paylaş</string>
+</resources>

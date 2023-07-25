@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear_layout_home"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blur_img">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/bg_rounded"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingHorizontal="16dp"
+                android:text="Arama"
+                android:textSize="17sp"
+                app:drawableStartCompat="@drawable/ic_search" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="wrap_content"
+                android:layout_height="166dp"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/input_design"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                app:iss_auto_cycle="true"
+                app:iss_delay="0"
+                app:iss_period="1500" />
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Yeni Çıkanlar"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/all1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:text="Tümünü Gör"
+                    android:textColor="@color/purple_500" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_category"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_16sdp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:ignore="RtlSymmetry"
+                tools:listitem="@layout/item_category"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_16sdp">
+
+                <TextView
+                    android:id="@+id/offerone"
+                    android:layout_width="165dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/bg_rounded_seashell"
+                    android:textColor="@color/purple_700"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Bugüne Özel" />
+
+                <TextView
+                    android:id="@+id/offertwo"
+                    android:layout_width="165dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/bg_rounded_honeydew"
+                    android:textColor="@color/purple_700"
+                    android:textSize="15sp"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:text="İndirim!" />
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_16sdp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="En Çok Kiralananlar"
+                    android:textColor="@color/primary_text"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/all2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:text="Tümünü Gör"
+                    android:textColor="@color/purple_500" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_rental"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_16sdp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_rental"
+                tools:ignore="RtlSymmetry" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingHorizontal="@dimen/_16sdp">
+
+                    <TextView
+                        android:id="@+id/offerthree"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_rounded_purplesmoke"
+                        android:gravity="center"
+                        android:textColor="@color/purple_700"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:textAllCaps="false"
+                        android:text="İlk Kiralama" />
+
+                    <TextView
+                        android:id="@+id/offerfour"
+                        android:layout_gravity="center"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_rounded_mistyrose"
+                        android:textColor="@color/purple_700"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:text="Kupon Fırsatı" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_16sdp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Çok Okunanlar"
+                    android:textColor="@color/primary_text"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/all3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tümünü Gör"
+                    android:textColor="@color/purple_500"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_best_selling"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_16sdp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:ignore="RtlSymmetry" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
